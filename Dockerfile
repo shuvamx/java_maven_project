@@ -10,8 +10,6 @@ COPY pom.xml .
 # Copy the source code
 COPY src ./src
 
-# Build the application using Maven
-RUN mvn clean package
 
 # Set the entry point for the application
 CMD ["java", "-jar", "target/HelloWorld.jar"]
